@@ -176,7 +176,44 @@ for(auto &row :ia)
     }
 ```
 
-## 第四章
+## 第四章 表达式
 
 😁改天再说
+
+2021.12.6-
+
+### 成员访问运算符
+
+点运算符和箭头运算符
+
+点运算符获取类对象的一个成员
+
+箭头运算符是指针指向的对象的一个成员
+
+```c++
+string s1="sdfasdf", *p = &s1;
+auto n=s1.size();
+n = (*p).size();
+n = p -> size();//两者等价
+```
+
+### sizeof运算符
+
+返回表达式或者一个类型名字所占的字节数
+
+sizeof (type)
+
+sizeof expr
+
+两者一样
+
+```c++
+Sales_data data;
+sizeof(Sales_data);
+sizeof data;//equal
+```
+
+## 第五章 语句
+
+### try语句块和异常处理
 
